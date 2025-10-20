@@ -57,7 +57,7 @@ int main(int argc, char * argv[])
             
             if(m_n>0)
             {
-                if (pipeline_profe(m_n,fich_entrada(),fich_salida(),es_append(),es_background())==OK)
+                if (pipeline(m_n,fich_entrada(),fich_salida(),es_append(),es_background())==OK)
                     ejecutar(m_n,m_num_arg,m_ordenes,m_argumentos,es_background());
             }
             visualizar();  // Cambiado a usar nuestra implementación
