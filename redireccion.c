@@ -72,18 +72,43 @@ int pipeline(int nordenes, char * infile, char * outfile, int append, int bgnd)
 
 int redirigir_entrada(int i)
 {
+    if(red_ordenes[i].entrada != 0){
+        if(dup2(red_ordenes[i].entrada, 0) == -1){
+            return ERROR;
+        }
+    }
 
+    return OK;
 } // Fin de la funci�n "redirigir_entrada"
 
 
 
 int redirigir_salida(int i)
 {
+
+    if(red_ordenes[i].salida != 1){
+        if(dup2(red_ordenes[i].salida, 1) == -1){
+            return ERROR;
+        }
+    }
+
+    return OK;
+
 } // Fin de la funci�n "redirigir_salida"
 
 
 int cerrar_fd()
 {
+    for(int i = 0; i< PIPELINE; i++){
+        if(red_ordenes[i].entrada != 0){
+            close(red_ordenes[i].entrada);
+        }
+        if(red_ordenes[i].salida != 1){
+            close(red_ordenes[i].salida);
+        }
+    }
+
+    return OK;
 } // Fin de la funci�n "cerrar_fd"
 
 
