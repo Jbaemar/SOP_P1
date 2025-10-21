@@ -1,0 +1,21 @@
+total 128
+-rw-rw-r-- 1 javi javi  4838 oct 20 16:08 analizador.c
+-rw-rw-r-- 1 javi javi 11302 oct 20 16:08 analizador.h
+-rw-rw-r-- 1 javi javi  9080 oct 20 16:08 analizador.o
+-rw-rw-r-- 1 javi javi   865 oct 20 16:08 defines.h
+-rw-rw-r-- 1 javi javi  1377 oct 21 02:11 ejecucion.c
+-rw-rw-r-- 1 javi javi  2559 oct 20 16:08 ejecucion.h
+-rw-rw-r-- 1 javi javi  2432 oct 21 02:12 ejecucion.o
+-rw-rw-r-- 1 javi javi   541 oct 20 16:08 Makefile
+-rw-rw-r-- 1 javi javi  6664 oct 20 16:08 profe_32.a
+-rw-rw-r-- 1 javi javi  8980 oct 20 16:08 profe_64.a
+-rw-rw-r-- 1 javi javi   437 oct 20 16:08 profe.h
+-rw-rw-r-- 1 javi javi  3152 oct 21 02:25 redireccion.c
+-rw-rw-r-- 1 javi javi  7363 oct 20 16:08 redireccion.h
+-rw-rw-r-- 1 javi javi  3616 oct 21 02:26 redireccion.o
+-rw-r--r-- 1 javi javi   420 oct 21 02:26 salida
+-rw-rw-r-- 1 javi javi     0 oct 20 16:08 salida2
+-rw-rw-r-- 1 javi javi     5 oct 21 02:15 salida3
+-rw-rw-r-- 1 javi javi     0 oct 21 02:27 salida.txt
+-rwxrwxr-x 1 javi javi 18672 oct 21 02:26 ush
+-rwxrwxr-x 1 javi javi  5863 oct 20 16:08 ush.c

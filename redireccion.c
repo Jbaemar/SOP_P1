@@ -54,8 +54,9 @@ int pipeline(int nordenes, char * infile, char * outfile, int append, int bgnd)
     }
 
    
-    if(strcmp(outfile, "") != 0){
+    if(strcmp(outfile, "") != 0/* outfile != NULL */){ 
         int flags;
+        printf("he entrado en redireccion outfile: %s\n", outfile);
         if(append){ 
             // Append: >> (añadir al final)
             flags = O_WRONLY | O_CREAT | O_APPEND;
