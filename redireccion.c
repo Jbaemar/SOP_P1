@@ -23,7 +23,7 @@ void redireccion_ini(void)
         red_ordenes[i].salida = 1;   // STDOUT_FILENO
     }
 
-}//Inicializar los valores de la estructura cmdfd
+}//Inicializar los valores de la estructura 
 
 
 

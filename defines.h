@@ -36,7 +36,7 @@ typedef struct
 {
   int entrada;
   int salida;
-}REDIRECCION_ORDENES[PIPELINE-1];
+}REDIRECCION_ORDENES[PIPELINE];
 
 
 #endif

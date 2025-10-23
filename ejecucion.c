@@ -22,7 +22,7 @@ int ejecutar (int nordenes , int *nargs , char **ordenes , char ***args , int bg
             perror("fork");
             return ERROR;
         }
-        if(aux==0){
+        if(aux==0){ //Hijo
            if(redirigir_salida(i) == ERROR){
                perror("redirigir_salida");
                _exit(EXIT_FAILURE);
@@ -41,6 +41,7 @@ int ejecutar (int nordenes , int *nargs , char **ordenes , char ***args , int bg
     /* padre: cerrar ficheros y esperar a todos los hijos */
     cerrar_fd();
     while(wait(NULL) > 0) ; /* esperar hasta que no queden hijos */
+    //wait() -> PID del hijo terminado (>0) cuando hay un hijo reaparecido
     return OK;
 
 } // Fin de la funcion "ejecutar"
