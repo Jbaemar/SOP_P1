@@ -107,10 +107,14 @@ int cerrar_fd()
 {
     for(int i = 0; i< PIPELINE; i++){
         if(red_ordenes[i].entrada != 0){
-            close(red_ordenes[i].entrada);
+            if(close(red_ordenes[i].entrada) == -1){
+                return ERROR; 
+            }
         }
         if(red_ordenes[i].salida != 1){
-            close(red_ordenes[i].salida);
+            if(close(red_ordenes[i].salida)== -1){
+                return ERROR; 
+            }
         }
     }
 
